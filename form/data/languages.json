@@ -1,0 +1,24 @@
+{
+  "languages": [
+    {
+      "name": "Spanish",
+      "icon": "https://cdn-icons-png.flaticon.com/512/197/197593.png"
+    },
+    {
+      "name": "French",
+      "icon": "https://cdn-icons-png.flaticon.com/512/197/197560.png"
+    },
+    {
+      "name": "German",
+      "icon": "https://cdn-icons-png.flaticon.com/512/197/197571.png"
+    },
+    {
+      "name": "Hindi",           
+      "icon": "https://cdn-icons-png.flaticon.com/512/197/197419.png"  
+    },
+    {
+      "name": "Japanese",       
+      "icon": "https://cdn-icons-png.flaticon.com/512/197/197604.png"  
+    }
+  ]
+}

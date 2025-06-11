@@ -1,0 +1,98 @@
+/* Base Styling for the Entire Page */
+body {
+  margin: 0;
+  font-family: var(--font-body);         /* Use body font defined in variables */
+  color: var(--dark-gray);               /* Set default text color */
+  background: var(--white);              /* Set background to white */
+}
+
+/* ================================
+   Hero Section: Introduction Banner
+================================== */
+.hero {
+  background-color: var(--primary-blue); /* Blue background for hero */
+  color: var(--white);                   /* White text */
+  padding: 60px 20px;                    /* Spacing inside section */
+  text-align: center;                    /* Center-align content */
+}
+
+.hero h1 {
+  font-family: var(--font-headline);     /* Use headline font */
+  font-size: 2.5rem;                      /* Large heading size */
+}
+
+.hero p {
+  font-size: 1.2rem;                      /* Slightly larger than body text */
+  margin: 20px 0;                         /* Vertical spacing */
+}
+
+/* Primary Call-to-Action Button */
+.primary-btn {
+  background-color: var(--accent-yellow);  /* Yellow background */
+  border: none;                            /* No border */
+  padding: 12px 24px;                      /* Comfortable click area */
+  font-weight: bold;                       /* Emphasize text */
+  cursor: pointer;                         /* Pointer cursor on hover */
+  transition: transform 0.2s ease;         /* Smooth hover animation */
+}
+
+.primary-btn:hover {
+  transform: scale(1.05);                  /* Slight zoom effect on hover */
+}
+
+/* ================================
+   Language Card Grid Section
+================================== */
+.card-grid-section {
+  padding: 40px 20px;                      /* Section spacing */
+  text-align: center;
+}
+
+.card-grid {
+  display: grid;
+  gap: 20px;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Responsive grid */
+  margin-top: 20px;
+}
+
+/* Individual Language Card */
+.card {
+  background-color: var(--white);
+  box-shadow: var(--card-shadow);         /* Soft shadow for depth */
+  padding: 20px;
+  border-radius: 8px;                      /* Rounded corners */
+  transition: transform 0.2s ease;        /* Smooth hover effect */
+}
+
+.card:hover {
+  transform: translateY(-5px);            /* Lift up effect on hover */
+}
+
+.card img {
+  width: 50px;
+  height: 50px;                           /* Icon size */
+}
+
+.card h3 {
+  font-family: var(--font-headline);
+  margin: 15px 0 10px;
+}
+
+.card a {
+  color: var(--primary-blue);
+  text-decoration: none;
+  font-weight: bold;
+}
+
+/* ================================
+   Responsive Design for Mobile
+================================== */
+@media (max-width: 768px) {
+  .hero h1 {
+    font-size: 2rem;                      /* Smaller heading on small screens */
+  }
+
+  .hero p {
+    font-size: 1rem;                      /* Adjusted paragraph size */
+  }
+}
