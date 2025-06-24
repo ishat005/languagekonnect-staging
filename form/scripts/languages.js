@@ -12,11 +12,13 @@ fetch('form/data/languages.json')
       card.className = 'card'; // Assign the card class for styling
 
       // Set the inner HTML of the card with the language icon, name, and link
-      card.innerHTML = `
-        <img src="${language.icon}" alt="${language.name} icon" />
-        <h3>${language.name}</h3>
-        <a href="#">Learn More</a>
-      `;
+card.innerHTML = `
+  <img src="${language.icon}" alt="${language.name} icon" />
+  <h3>${language.name}</h3>
+  <a href="#">Learn More</a>
+  <button class="next-btn">Next</button>
+`;
+;
 
       // Add the card to the grid container
       grid.appendChild(card);
