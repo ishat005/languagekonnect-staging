@@ -1,15 +1,15 @@
 /* Root-level CSS variables for consistent styling across the site */
 :root {
   /* Brand Colors */
-  --primary-blue: #1976D2;      /* Main brand blue color */
-  --accent-yellow: #FFEB3B;     /* Highlight or accent yellow */
-  --dark-gray: #333;            /* Standard dark text or background color */
-  --white: #fff;                /* Universal white */
+  --primary-blue: #1976d2; /* Main brand blue color */
+  --accent-yellow: #ffeb3b; /* Highlight or accent yellow */
+  --dark-gray: #333; /* Standard dark text or background color */
+  --white: #fff; /* Universal white */
 
   /* Font Families */
-  --font-headline: 'Open Sans', 'Lato', sans-serif;   /* Fonts used for headings */
-  --font-body: 'Roboto', sans-serif;                  /* Fonts used for regular text */
+  --font-headline: "Open Sans", "Lato", sans-serif; /* Fonts used for headings */
+  --font-body: "Roboto", sans-serif; /* Fonts used for regular text */
 
   /* Visual Effects */
-  --card-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);         /* Soft shadow for card elements */
+  --card-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Soft shadow for card elements */
 }

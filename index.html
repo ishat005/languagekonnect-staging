@@ -1,49 +1,64 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <!-- Meta tags for proper rendering and touch zooming -->
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <head>
+    <!-- Meta tags for proper rendering and touch zooming -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <!-- Page Title -->
-  <title>LanguageKonnect</title>
+    <!-- Page Title -->
+    <title>LanguageKonnect</title>
 
-  <!-- External Stylesheets -->
-  <link rel="stylesheet" href="form/styles/variables.css" />
-  <link rel="stylesheet" href="form/styles/main.css" />
+    <!-- External Stylesheets -->
+    <link rel="stylesheet" href="form/styles/variables.css" />
+    <link rel="stylesheet" href="./form/styles/main.css" />
 
-  <!-- Google Fonts for typography -->
-  <link href="https://fonts.googleapis.com/css2?family=Lato&family=Open+Sans&family=Roboto&display=swap" rel="stylesheet" />
-</head>
-<body>
+    <!-- Google Fonts for typography -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato&family=Open+Sans&family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- Hero Section: Main introduction to the platform -->
+    <section
+      class="hero"
+      role="banner"
+      aria-label="LanguageKonnect Hero Section"
+    >
+      <div class="hero-content">
+        <h1>Connect Globally, Translate Instantly</h1>
+        <p>
+          LanguageKonnect bridges the gap between cultures with fast, accurate
+          translations.
+        </p>
+        <button class="primary-btn" aria-label="Get Started Button">
+          Get Started
+        </button>
+      </div>
+    </section>
 
-  <!-- Hero Section: Main introduction to the platform -->
-  <section class="hero" role="banner" aria-label="LanguageKonnect Hero Section">
-    <div class="hero-content">
-      <h1>Connect Globally, Translate Instantly</h1>
-      <p>
-        LanguageKonnect bridges the gap between cultures with fast, accurate translations.
-      </p>
-      <button class="primary-btn" aria-label="Get Started Button">
-        Get Started
-      </button>
-    </div>
-  </section>
+    <!-- Language Card Grid Section: Lists the available languages -->
+    <section class="card-grid-section" aria-label="Language Cards">
+      <h2>Available Languages</h2>
+      <!-- This div will be dynamically filled with language cards -->
+      <div id="language-grid" class="card-grid"></div>
+    </section>
 
-  <!-- Language Card Grid Section: Lists the available languages -->
-  <section class="card-grid-section" aria-label="Language Cards">
-    <h2>Available Languages</h2>
-    <!-- This div will be dynamically filled with language cards -->
-    <div id="language-grid" class="card-grid"></div>
-  </section>
+    <!-- Script to populate the language cards dynamically -->
+    <script src="form/scripts/languages.js"></script>
 
-  <!-- Script to populate the language cards dynamically -->
-  <script src="form/scripts/languages.js"></script>
+    <!-- Script to load raffle-widget.js -->
+    <script src="form/scripts/raffle-widget.js"></script>
 
-  <!-- Dummy Raffle Widget -->
-<div class="raffle-widget">
-  🎁 Raffle: Win free language lessons!
-</div>
+    <!-- Script to initialize with mock userId and display ticket count -->
+    <script>
+      const userId = "mock-user-id";
+      const ticketCountElement = document.createElement("p");
+      ticketCountElement.textContent = `You have 10 tickets, ${userId}!`;
+      document.body.appendChild(ticketCountElement);
+    </script>
 
-</body>
+    <!-- Dummy Raffle Widget -->
+    <div class="raffle-widget">🎁 Raffle: Win free language lessons!</div>
+  </body>
 </html>
